@@ -16,3 +16,4 @@ clean:
 	sudo bpftool prog detach pinned /sys/fs/bpf/sockredir msg_verdict pinned /sys/fs/bpf/sock_ops_map
 	sudo bpftool cgroup detach /sys/fs/cgroup/ sock_ops name bpf_sockmap
 	sudo rm -rf /sys/fs/bpf/sockops /sys/fs/bpf/sockredir /sys/fs/bpf/sock_ops_map
+	rm *.o
